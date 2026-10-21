@@ -1,0 +1,30 @@
+{
+  "name": "tool-lights",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kathornton"
+  },
+  "license": "MIT",
+  "description": "A one-line strip of lights above the prompt, one per plugin tool or skill, that expands into a pane. A light goes amber while a call runs, green when it returns, red when it fails. Pin the ones you care about.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "watch": {
+      "type": "string",
+      "title": "What to watch",
+      "description": "Comma-separated names or * patterns. 'auto' watches every plugin MCP tool (mcp__plugin_*) and every plugin skill. Examples: auto, mcp__my-server__*, mcp__plugin_my-plugin_db__query, skill:my-plugin:*, Bash",
+      "default": "auto"
+    },
+    "open_on_start": {
+      "type": "boolean",
+      "title": "Open the pane at session start",
+      "description": "The expanded view. Off means it opens with /tool-lights or the strip's expand button.",
+      "default": false
+    },
+    "show_strip": {
+      "type": "boolean",
+      "title": "Show the strip above the prompt",
+      "description": "The compact one-line view. Off means only the /tool-lights pane.",
+      "default": true
+    }
+  }
+}

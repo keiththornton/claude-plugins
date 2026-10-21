@@ -1,31 +1,87 @@
 {
   "name": "keith-tools",
-  "description": "Keith Thornton's Claude Code plugins: structural code intelligence (jec-index), a live Node.js debugger (node-runtime), and a working discipline for long tasks (deliberate).",
-  "owner": { "name": "Keith Thornton", "url": "https://github.com/keiththornton" },
+  "description": "Keith Thornton's Claude Code plugins: structural code intelligence (jec-index), a live Node.js debugger (node-runtime), a working discipline for long tasks (deliberate), a tool-lights pane (a mod), and web-dev discipline with real screenshots (webdev-pro).",
+  "owner": {
+    "name": "Keith Thornton",
+    "url": "https://github.com/keiththornton"
+  },
   "plugins": [
     {
       "name": "jec-index",
-      "source": { "source": "github", "repo": "keiththornton/jec-index" },
+      "source": {
+        "source": "github",
+        "repo": "keiththornton/jec-index"
+      },
       "description": "Persistent symbol + dependency index for Claude Code: read one symbol instead of a file, see who depends on what, which tests cover it, and how an area is written - plus a hook that runs only the impacted tests after each edit.",
       "version": "0.2.0",
       "category": "development",
-      "keywords": ["code-intelligence", "symbols", "impact-analysis", "tests", "tree-sitter"]
+      "keywords": [
+        "code-intelligence",
+        "symbols",
+        "impact-analysis",
+        "tests",
+        "tree-sitter"
+      ]
     },
     {
       "name": "node-runtime",
-      "source": { "source": "github", "repo": "keiththornton/node-runtime-mcp" },
+      "source": {
+        "source": "github",
+        "repo": "keiththornton/node-runtime-mcp"
+      },
       "description": "A live Node.js debugger: launch or attach, breakpoints, stepping, scopes, evaluate and captured output over the V8 Inspector protocol.",
       "version": "0.1.0",
       "category": "development",
-      "keywords": ["debugger", "node", "inspector"]
+      "keywords": [
+        "debugger",
+        "node",
+        "inspector"
+      ]
     },
     {
       "name": "deliberate",
-      "source": { "source": "github", "repo": "keiththornton/deliberate" },
+      "source": {
+        "source": "github",
+        "repo": "keiththornton/deliberate"
+      },
       "description": "Decompose before acting, verify before finishing, reconsider on a cadence: the /deliberate skill, a verifier agent, and checkpoint + finish-gate hooks.",
       "version": "0.1.0",
       "category": "productivity",
-      "keywords": ["workflow", "verification", "planning"]
+      "keywords": [
+        "workflow",
+        "verification",
+        "planning"
+      ]
+    },
+    {
+      "name": "tool-lights",
+      "source": "./tool-lights",
+      "description": "A pane with one light per plugin tool, MCP server or skill: amber while a call runs, green when it returns, red when it fails.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": [
+        "mod",
+        "pane",
+        "tools",
+        "mcp",
+        "skills",
+        "monitoring"
+      ]
+    },
+    {
+      "name": "webdev-pro",
+      "source": "./webdev-pro",
+      "description": "Web-dev discipline: Playwright visual QA at phone + desktop that Claude actually looks at, a clarify-before-building habit, verify-before-done gating via a Stop hook, a fresh-eyes ui-critic agent, and /ship for the full pre-merge pass.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "web",
+        "frontend",
+        "qa",
+        "playwright",
+        "screenshots",
+        "verification"
+      ]
     }
   ]
 }

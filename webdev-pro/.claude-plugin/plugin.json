@@ -1,0 +1,9 @@
+{
+  "name": "webdev-pro",
+  "displayName": "WebDev Pro",
+  "version": "0.1.0",
+  "description": "Web-dev discipline for Claude Code: visual QA with real screenshots, an ambiguity check before building, verify-before-done gating, and token-efficient work habits.",
+  "author": { "name": "Katherine Thornton" },
+  "license": "MIT",
+  "keywords": ["web", "frontend", "qa", "playwright", "screenshots", "verification"]
+}
